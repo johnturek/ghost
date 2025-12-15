@@ -1,5 +1,5 @@
 ---
-title: 'GitHub Copilot: The Complete Beginner's Guide'
+title: 'GitHub Copilot - The Complete Beginner Guide'
 description: 'Everything you need to know to start using GitHub Copilot effectively for AI-powered coding'
 pubDate: 'Dec 15 2025'
 heroImage: '../../assets/blog-placeholder-1.jpg'
