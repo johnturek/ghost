@@ -45,41 +45,111 @@ import HeaderLink from './HeaderLink.astro';
 <style>
 	header {
 		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		padding: 0;
+		background: var(--white);
+		backdrop-filter: blur(10px);
+		box-shadow: var(--shadow-md);
+		border-bottom: 3px solid transparent;
+		border-image: var(--gradient-purple-pink) 1;
 	}
 	h2 {
 		margin: 0;
-		font-size: 1em;
+		font-size: 1.5rem;
+		font-weight: 700;
 	}
 
 	h2 a,
 	h2 a.active {
+		background: var(--gradient-purple-pink);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 		text-decoration: none;
+		transition: all var(--transition-base);
 	}
+
+	h2 a:hover {
+		transform: scale(1.05);
+	}
+
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		max-width: 64rem;
+		margin: 0 auto;
+		padding: var(--spacing-3) var(--spacing-4);
 	}
+
+	.internal-links {
+		display: flex;
+		gap: var(--spacing-2);
+	}
+
 	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
+		padding: var(--spacing-2) var(--spacing-3);
+		color: var(--gray-700);
+		background: var(--gray-50);
+		border-radius: var(--radius-full);
 		text-decoration: none;
+		font-weight: 500;
+		transition: all var(--transition-bounce);
 	}
+
+	nav a:hover {
+		color: var(--white);
+		background: var(--gradient-purple-pink);
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-colored);
+	}
+
 	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
+		color: var(--white);
+		background: var(--gradient-purple-pink);
+		font-weight: 600;
 	}
+
+	nav a:focus {
+		outline: 3px solid var(--purple-400);
+		outline-offset: 2px;
+	}
+
 	.social-links,
 	.social-links a {
 		display: flex;
+		gap: var(--spacing-2);
 	}
-	@media (max-width: 720px) {
+
+	.social-links a {
+		padding: var(--spacing-2);
+		color: var(--purple-600);
+		border: none;
+		transition: all var(--transition-bounce);
+		border-radius: var(--radius-md);
+	}
+
+	.social-links a:hover {
+		color: var(--pink-600);
+		background: var(--purple-50);
+		transform: scale(1.1) rotate(5deg);
+	}
+
+	@media (max-width: 640px) {
+		nav {
+			padding: var(--spacing-2);
+		}
+
 		.social-links {
 			display: none;
+		}
+
+		.internal-links {
+			flex-wrap: wrap;
+		}
+
+		nav a {
+			padding: var(--spacing-1) var(--spacing-2);
+			font-size: 0.9375rem;
 		}
 	}
 </style>

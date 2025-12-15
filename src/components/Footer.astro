@@ -41,22 +41,45 @@ const today = new Date();
 </footer>
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
+		margin-top: var(--spacing-8);
+		padding: var(--spacing-6) var(--spacing-4);
+		background: var(--gradient-purple-pink);
+		color: var(--white);
 		text-align: center;
+		border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+		box-shadow: var(--shadow-xl);
+	}
+	footer a {
+		color: var(--purple-100);
+		text-decoration-color: var(--pink-300);
+	}
+	footer a:hover {
+		color: var(--white);
+		transform: scale(1.05);
 	}
 	.social-links {
 		display: flex;
 		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
+		gap: var(--spacing-3);
+		margin-top: var(--spacing-4);
 	}
 	.social-links a {
 		text-decoration: none;
-		color: rgb(var(--gray));
+		color: var(--white);
+		transition: all var(--transition-bounce);
+		padding: var(--spacing-2);
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: var(--radius-lg);
+		backdrop-filter: blur(10px);
 	}
 	.social-links a:hover {
-		color: rgb(var(--gray-dark));
+		background: var(--white);
+		color: var(--purple-600);
+		transform: translateY(-4px) rotate(5deg);
+		box-shadow: var(--shadow-lg);
+	}
+	.social-links a:focus {
+		outline: 3px solid var(--white);
+		outline-offset: 2px;
 	}
 </style>
