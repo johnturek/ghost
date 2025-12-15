@@ -2,7 +2,7 @@
 title: 'MongoDB with Node.js: Complete Guide for Modern Apps'
 description: 'Master MongoDB integration with Node.js for flexible, scalable NoSQL database solutions'
 pubDate: 'Dec 15 2025'
-heroImage: '/blog-placeholder-4.jpg'
+heroImage: '/blog-placeholder-1.jpg'
 ---
 
 MongoDB is the leading NoSQL database, perfect for applications requiring flexible schemas and horizontal scaling. Learn how to integrate it seamlessly with Node.js.

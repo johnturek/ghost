@@ -2,7 +2,7 @@
 title: 'Kubernetes Essentials: Container Orchestration Made Simple'
 description: 'Learn how to deploy and manage containerized applications at scale with Kubernetes'
 pubDate: 'Dec 15 2025'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/blog-placeholder-1.jpg'
 ---
 
 Kubernetes (K8s) is the industry-standard platform for orchestrating containerized applications. Once you've mastered Docker, Kubernetes is your next step to managing containers at scale.
