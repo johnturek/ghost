@@ -2,7 +2,7 @@
 title: 'Vue 3 Composition API: Modern Component Development'
 description: 'Master Vue 3 Composition API for better code organization and TypeScript integration'
 pubDate: 'Dec 15 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-5.jpg'
 ---
 
 Vue 3's Composition API revolutionizes component development with better logic reusability, TypeScript support, and clearer code organization. Let's explore this powerful new approach.

@@ -2,7 +2,7 @@
 title: 'Webpack Deep Dive: Master Modern JavaScript Bundling'
 description: 'Learn how to configure Webpack for optimized builds, code splitting, and better performance'
 pubDate: 'Dec 15 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-2.jpg'
 ---
 
 Webpack is the most popular JavaScript bundler, transforming your modules and assets into optimized bundles for production. Master Webpack configuration for professional-grade applications.

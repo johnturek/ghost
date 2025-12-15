@@ -2,7 +2,7 @@
 title: 'Redis for Caching: Boost Your Application Performance'
 description: 'Learn how to implement Redis caching strategies to dramatically improve application speed'
 pubDate: 'Dec 15 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Redis is an in-memory data structure store that excels as a cache, message broker, and real-time data platform. Learn how to leverage Redis for lightning-fast application performance.

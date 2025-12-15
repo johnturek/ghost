@@ -2,7 +2,7 @@
 title: 'GraphQL: A Modern Alternative to REST APIs'
 description: 'Discover how GraphQL revolutionizes API design with flexible, efficient data fetching'
 pubDate: 'Dec 15 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 
 GraphQL is a query language for APIs that gives clients the power to request exactly the data they need. No more over-fetching or under-fetching data from REST endpoints.
