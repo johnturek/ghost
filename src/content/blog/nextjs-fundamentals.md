@@ -2,7 +2,7 @@
 title: 'Next.js 14: The Complete Guide to React Framework'
 description: 'Master Next.js - the React framework for production with server-side rendering, routing, and more'
 pubDate: 'Dec 13 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Next.js is the most popular React framework, powering applications for companies like Netflix, TikTok, and Twitch. It provides everything you need to build production-ready React apps with excellent developer experience.

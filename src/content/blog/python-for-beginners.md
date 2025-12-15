@@ -2,7 +2,7 @@
 title: 'Python Programming: A Beginner-Friendly Guide'
 description: 'Start your programming journey with Python - the most beginner-friendly and powerful language'
 pubDate: 'Dec 15 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Python is one of the most popular programming languages, known for its simplicity and versatility. Used by companies like Google, Netflix, and NASA, it's perfect for beginners and powerful enough for advanced projects.

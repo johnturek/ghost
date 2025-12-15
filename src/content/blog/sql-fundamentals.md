@@ -2,7 +2,7 @@
 title: 'SQL Essentials: Master Database Queries'
 description: 'Learn SQL from basics to advanced queries - the essential skill for working with databases'
 pubDate: 'Dec 14 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 SQL (Structured Query Language) is the standard language for working with relational databases. Whether you're building web apps, analyzing data, or managing databases, SQL is essential. Let's master the fundamentals.

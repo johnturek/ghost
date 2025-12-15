@@ -2,7 +2,7 @@
 title: 'Async JavaScript: Promises, Async/Await, and Beyond'
 description: 'Master asynchronous programming in JavaScript and write clean, efficient code'
 pubDate: 'Dec 19 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Asynchronous programming is fundamental to modern JavaScript. From API calls to file operations, understanding async code is essential for building responsive applications.

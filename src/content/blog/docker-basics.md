@@ -2,7 +2,7 @@
 title: 'Docker for Developers: From Zero to Deployment'
 description: 'Learn how to containerize your applications with Docker and streamline your development workflow'
 pubDate: 'Dec 12 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Docker has revolutionized how we develop, ship, and run applications. Instead of worrying about "it works on my machine," Docker ensures your app runs the same everywhere. Let's learn the essentials.

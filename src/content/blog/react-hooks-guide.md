@@ -2,7 +2,7 @@
 title: 'React Hooks: A Complete Guide for Beginners'
 description: 'Learn how to use React Hooks to build powerful functional components with state and side effects'
 pubDate: 'Dec 10 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 React Hooks revolutionized how we write React components. Instead of using class components for state and lifecycle methods, we can now use functional components with hooks. Let's dive into the most important hooks you need to know.

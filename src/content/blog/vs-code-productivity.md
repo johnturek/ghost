@@ -2,7 +2,7 @@
 title: 'VS Code Productivity Hacks: Code Faster'
 description: 'Master Visual Studio Code with these essential shortcuts, extensions, and tips for maximum productivity'
 pubDate: 'Dec 16 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 VS Code is the most popular code editor for good reason - it's fast, extensible, and packed with features. Learn how to use it like a pro and boost your productivity.

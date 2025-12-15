@@ -2,7 +2,7 @@
 title: 'Web Performance: Make Your Site Lightning Fast'
 description: 'Learn proven techniques to optimize your website for speed and deliver exceptional user experiences'
 pubDate: 'Dec 17 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Website speed matters. A 1-second delay can reduce conversions by 7%. Users expect pages to load in under 3 seconds. Let's make your site blazing fast.

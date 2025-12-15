@@ -2,7 +2,7 @@
 title: 'JWT Authentication: Secure Your Web Apps'
 description: 'Learn how to implement secure user authentication using JSON Web Tokens in your applications'
 pubDate: 'Dec 18 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 JSON Web Tokens (JWT) are the industry standard for secure authentication in modern web applications. Used by companies like Auth0, Firebase, and AWS Cognito, JWTs provide a stateless, scalable way to authenticate users.

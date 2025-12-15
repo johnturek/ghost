@@ -2,7 +2,7 @@
 title: 'Tailwind CSS: Build Beautiful UIs Faster'
 description: 'Learn how to use Tailwind CSS utility classes to create responsive, modern designs without writing custom CSS'
 pubDate: 'Dec 11 2025'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Tailwind CSS is a utility-first CSS framework that lets you build custom designs without leaving your HTML. Instead of writing custom CSS, you compose designs using pre-built utility classes.
