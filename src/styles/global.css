@@ -1,55 +1,32 @@
 /*
-  Colorful & Playful Theme
-  Purple & Pink color scheme with vibrant, energetic design
+  Linux Terminal Theme
+  Dark console aesthetic with classic terminal colors
 */
 
-/* Import Public Sans font */
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap');
-
 :root {
-  /* Purple & Pink Colors */
-  --purple-900: #3b0764;
-  --purple-800: #581c87;
-  --purple-700: #6b21a8;
-  --purple-600: #7c3aed;
-  --purple-500: #8b5cf6;
-  --purple-400: #a78bfa;
-  --purple-300: #c4b5fd;
-  --purple-200: #ddd6fe;
-  --purple-100: #ede9fe;
-  --purple-50: #f5f3ff;
+  /* Terminal Colors */
+  --terminal-bg: #0a0a0a;
+  --terminal-bg-alt: #141414;
+  --terminal-bg-card: #1a1a1a;
+  --terminal-green: #00ff00;
+  --terminal-green-dim: #00cc00;
+  --terminal-green-dark: #008800;
+  --terminal-blue: #0080ff;
+  --terminal-cyan: #00ffff;
+  --terminal-cyan-dim: #00cccc;
+  --terminal-yellow: #ffff00;
+  --terminal-red: #ff0055;
+  --terminal-gray: #808080;
+  --terminal-white: #e0e0e0;
+  --terminal-border: #00ff0033;
+  
+  /* Glow effects */
+  --green-glow: 0 0 10px rgba(0, 255, 0, 0.5);
+  --green-glow-lg: 0 0 20px rgba(0, 255, 0, 0.4);
+  --cyan-glow: 0 0 10px rgba(0, 255, 255, 0.5);
+  --blue-glow: 0 0 10px rgba(0, 128, 255, 0.5);
 
-  --pink-900: #831843;
-  --pink-800: #9f1239;
-  --pink-700: #be185d;
-  --pink-600: #db2777;
-  --pink-500: #ec4899;
-  --pink-400: #f472b6;
-  --pink-300: #f9a8d4;
-  --pink-200: #fbcfe8;
-  --pink-100: #fce7f3;
-  --pink-50: #fdf2f8;
-
-  /* Neutral Colors */
-  --gray-900: #18181b;
-  --gray-800: #27272a;
-  --gray-700: #3f3f46;
-  --gray-600: #52525b;
-  --gray-500: #71717a;
-  --gray-400: #a1a1aa;
-  --gray-300: #d4d4d8;
-  --gray-200: #e4e4e7;
-  --gray-100: #f4f4f5;
-  --gray-50: #fafafa;
-  --white: #ffffff;
-
-  /* Gradients */
-  --gradient-purple-pink: linear-gradient(135deg, var(--purple-500) 0%, var(--pink-500) 100%);
-  --gradient-purple-blue: linear-gradient(135deg, var(--purple-600) 0%, #3b82f6 100%);
-  --gradient-pink-orange: linear-gradient(135deg, var(--pink-500) 0%, #f97316 100%);
-  --gradient-subtle: linear-gradient(180deg, var(--purple-50) 0%, var(--white) 100%);
-
-  /* Spacing (8px grid) */
+  /* Spacing */
   --spacing-1: 0.5rem;
   --spacing-2: 1rem;
   --spacing-3: 1.5rem;
@@ -59,40 +36,54 @@
   --spacing-7: 4rem;
   --spacing-8: 6rem;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-colored: 0 10px 30px -5px rgba(139, 92, 246, 0.3);
+  /* Shadows - Terminal style */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 0 20px rgba(0, 255, 0, 0.3);
 
-  /* Border Radius - More rounded for playful feel */
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.5rem;
-  --radius-full: 9999px;
+  /* Border Radius - Minimal for terminal look */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.375rem;
 
   /* Transitions */
-  --transition-base: 200ms ease-in-out;
+  --transition-base: 150ms ease-in-out;
   --transition-slow: 300ms ease-in-out;
-  --transition-bounce: 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Scanline overlay effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.3;
 }
 
 body {
-  font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Courier New', 'Consolas', 'Monaco', 'Lucida Console', monospace;
   margin: 0;
   padding: 0;
   text-align: left;
-  background: var(--gradient-subtle);
-  background-attachment: fixed;
+  background: var(--terminal-bg);
   word-wrap: break-word;
   overflow-wrap: break-word;
-  color: var(--gray-800);
-  font-size: 1.0625rem;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: var(--terminal-green-dim);
+  font-size: 1rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: auto;
 }
 
 main {
@@ -109,39 +100,52 @@ h4,
 h5,
 h6 {
   margin: 0 0 var(--spacing-3) 0;
-  color: var(--gray-900);
+  color: var(--terminal-green);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.3;
+  text-shadow: var(--green-glow);
+  letter-spacing: 0.05em;
 }
 
 h1 {
-  font-size: 2.75rem;
-  line-height: 1.1;
+  font-size: 2.5rem;
+  line-height: 1.2;
   margin-bottom: var(--spacing-4);
-  background: var(--gradient-purple-pink);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--terminal-cyan);
+  text-shadow: var(--cyan-glow);
+  border-bottom: 2px solid var(--terminal-green);
+  padding-bottom: var(--spacing-2);
+}
+
+h1::before {
+  content: "> ";
+  color: var(--terminal-green);
 }
 
 h2 {
-  font-size: 2.25rem;
-  line-height: 1.2;
-  color: var(--purple-700);
+  font-size: 2rem;
+  line-height: 1.3;
+  color: var(--terminal-green);
+}
+
+h2::before {
+  content: "$ ";
+  color: var(--terminal-cyan);
 }
 
 h3 {
-  font-size: 1.75rem;
-  line-height: 1.3;
-  color: var(--pink-700);
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--terminal-cyan-dim);
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  color: var(--terminal-green-dim);
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 h6 {
@@ -151,32 +155,31 @@ h6 {
 strong,
 b {
   font-weight: 700;
-  color: var(--purple-700);
+  color: var(--terminal-white);
+  text-shadow: var(--green-glow);
 }
 
 a {
-  color: var(--purple-600);
+  color: var(--terminal-cyan);
   text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: var(--pink-400);
+  text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
   transition: all var(--transition-base);
 }
 
 a:hover {
-  color: var(--pink-600);
-  text-decoration-color: var(--purple-400);
-  transform: translateY(-1px);
+  color: var(--terminal-cyan);
+  text-shadow: var(--cyan-glow);
+  text-decoration: none;
 }
 
 a:focus {
-  outline: 3px solid var(--purple-400);
+  outline: 2px solid var(--terminal-green);
   outline-offset: 2px;
-  border-radius: var(--radius-sm);
 }
 
 a:active {
-  transform: translateY(0);
+  color: var(--terminal-green);
 }
 
 p {
@@ -211,80 +214,105 @@ img {
 }
 
 code {
-  padding: 0.25rem 0.5rem;
-  background: linear-gradient(135deg, var(--purple-100) 0%, var(--pink-100) 100%);
-  border: 1px solid var(--purple-200);
+  padding: 0.125rem 0.375rem;
+  background: var(--terminal-bg-card);
+  border: 1px solid var(--terminal-border);
   border-radius: var(--radius-sm);
-  font-size: 0.875em;
-  font-family: "Consolas", "Monaco", "Courier New", monospace;
-  color: var(--purple-800);
+  font-size: 0.9em;
+  font-family: 'Courier New', 'Consolas', 'Monaco', monospace;
+  color: var(--terminal-cyan);
 }
 
 pre {
   padding: var(--spacing-4);
-  background: var(--gray-900);
-  border-radius: var(--radius-lg);
+  background: var(--terminal-bg-alt);
+  border: 1px solid var(--terminal-green-dark);
+  border-radius: var(--radius-md);
   overflow-x: auto;
-  line-height: 1.5;
-  box-shadow: var(--shadow-colored);
+  line-height: 1.6;
+  box-shadow: var(--shadow-glow);
+  position: relative;
+}
+
+pre::before {
+  content: "[$] ";
+  color: var(--terminal-green);
+  opacity: 0.6;
 }
 
 pre > code {
   all: unset;
-  color: var(--purple-200);
+  color: var(--terminal-white);
 }
 
 blockquote {
-  border-left: 4px solid var(--gradient-purple-pink);
-  border-image: var(--gradient-purple-pink) 1;
-  padding: var(--spacing-3) 0 var(--spacing-3) var(--spacing-4);
+  border-left: 3px solid var(--terminal-cyan);
+  padding: var(--spacing-2) 0 var(--spacing-2) var(--spacing-4);
   margin: var(--spacing-4) 0;
-  background: linear-gradient(135deg, var(--purple-50) 0%, var(--pink-50) 100%);
-  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
-  font-size: 1.125rem;
+  background: var(--terminal-bg-alt);
+  color: var(--terminal-cyan-dim);
   font-style: italic;
-  color: var(--purple-900);
+}
+
+blockquote::before {
+  content: "// ";
+  color: var(--terminal-gray);
 }
 
 hr {
   border: none;
-  height: 3px;
-  background: var(--gradient-purple-pink);
+  height: 1px;
+  background: var(--terminal-green-dark);
   margin: var(--spacing-5) 0;
-  border-radius: var(--radius-full);
+  box-shadow: var(--green-glow);
 }
 
 button,
 .button {
   display: inline-block;
   padding: var(--spacing-2) var(--spacing-4);
-  background: var(--gradient-purple-pink);
-  color: var(--white);
-  border: none;
-  border-radius: var(--radius-full);
+  background: var(--terminal-bg-card);
+  color: var(--terminal-green);
+  border: 2px solid var(--terminal-green);
+  border-radius: var(--radius-sm);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
   text-decoration: none;
   cursor: pointer;
-  transition: all var(--transition-bounce);
-  box-shadow: var(--shadow-md);
+  transition: all var(--transition-base);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+button::before,
+.button::before {
+  content: "[";
+  margin-right: 0.5em;
+}
+
+button::after,
+.button::after {
+  content: "]";
+  margin-left: 0.5em;
 }
 
 button:hover,
 .button:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-xl);
+  background: var(--terminal-green);
+  color: var(--terminal-bg);
+  box-shadow: var(--green-glow-lg);
 }
 
 button:focus,
 .button:focus {
-  outline: 3px solid var(--purple-400);
+  outline: 2px solid var(--terminal-cyan);
   outline-offset: 2px;
 }
 
 button:active,
 .button:active {
-  transform: translateY(0);
+  transform: scale(0.98);
 }
 
 /* Reduced motion support */
